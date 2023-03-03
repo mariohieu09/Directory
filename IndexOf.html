@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+<span id="Nhap">Nhập từ:</span>
+<input type="text" width="300px" id="Nhap1"/>
+<button onclick="trans()" value="Dịch">Dịch</button>
+    <p id="result"></p>
+  </div>
+<script>
+    function trans() {
+      let n = document.getElementById("Nhap1").value;
+      let E = ["apple", "fertilizer" ];
+      let V = ["táo", "bón"];
+      let vl = E.indexOf(n);
+      document.getElementById("result").innerHTML = V[vl] ;
+  }
+</script>
+
+</body>
+</html>
